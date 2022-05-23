@@ -1,0 +1,8 @@
+192.168.0.2 de:ad:be:ef:00:00
+192.168.1.2 de:ad:be:ef:00:01
+192.168.2.2 de:ad:be:ef:00:02
+192.168.3.2 de:ad:be:ef:00:03
+fe80::0:2 de:ad:be:ef:00:00
+fe80::1:2 de:ad:be:ef:00:01
+fe80::2:2 de:ad:be:ef:00:02
+fe80::3:2 de:ad:be:ef:00:03

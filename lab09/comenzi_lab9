@@ -1,0 +1,47 @@
+EBGP
+
+router bgp 1
+bgp router-id <IP-către-IXP>
+no bgp ebgp-requires-policy
+no bgp network import-check
+neighbor 180.21.0.21 remote-as 21
+address-family ipv4 unicast
+neighbor 180.21.0.21 activate
+neighbor 180.21.0.21 soft-reconfiguration inbound
+network 1.0.1.0/24
+network 1.0.2.0/24
+network 1.0.3.0/24
+network 1.0.4.0/24
+
+do show ip bgp neighbors | include BGP
+do show ip bgp
+
+
+IBGP
+
+router bgp 1
+no bgp ebgp-requires-policy
+no bgp network import-check
+
+neighbor LOND peer-group
+neighbor 1.0.1.1 peer-group LOND
+neighbor 1.0.2.2 peer-group LOND
+
+neighbor BUCH peer-group
+neighbor 1.0.3.2 peer-group BUCH
+neighbor 1.0.4.1 peer-group BUCH
+
+neighbor BERL peer-group
+neighbor 1.0.4.2 peer-group BERL
+neighbor 1.0.2.1 peer-group BERL
+
+neighbor PARI peer-group
+neighbor 1.0.3.1 peer-group PARI
+neighbor 1.0.1.2 peer-group PARI
+
+neighbor LOND remote-as 1
+neighbor BUCH remote-as 1
+neighbor BERL remote-as 1
+neighbor PARI remote-as 1
+
+exit

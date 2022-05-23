@@ -1,0 +1,36 @@
+lab 05
+
+adr: <nr. grupa>.0.0.0/8 (1.0.0.0/8)
+
+adrese retele:
+
+1.0.1.0/24
+1.0.2.0/24
+1.0.3.0/24
+1.0.4.0/24
+
+ports:
+
+LOND: port_BERL, port_PARI
+PARI: port_LOND, port_BUCH
+BUCH: port_PARI, port_BERL
+BERL: port_BUCH, port_LOND
+
+interfete:
+(1.0.1.0/24)
+LOND: 1.0.1.1/24
+BERL: 1.0.1.2/24
+
+(1.0.2.0/24)
+LOND: 1.0.2.1/24
+PARI: 1.0.2.2/24
+
+(1.0.3.0/24)
+PARI: 1.0.3.1/24
+BUCH: 1.0.3.2/24
+
+(1.0.4.0/24)
+BUCH: 1.0.4.1/24
+BERL: 1.0.4.2/24
+
+ip ospf cost 10

@@ -1,0 +1,5 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/naumencu/an3_sem2/PC/lab10'
+gcc -o client client.c requests.c helpers.c buffer.c -Wall
+make: Leaving directory '/home/naumencu/an3_sem2/PC/lab10'
+ 

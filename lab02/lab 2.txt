@@ -1,0 +1,17 @@
+lab 2
+
+16*2^30 bytes = 16*8*2^30 biti 
+5h = 3600s
+
+bandwidth = 3817487 b/s
+latency = 3600s
+
+-------
+
+2 TB = 1,759218604*10^13
+200m
+8 m/s
+25 s
+
+bandwidth = 703687441776.64 b/s
+latency = 25 s

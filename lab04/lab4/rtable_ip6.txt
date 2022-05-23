@@ -1,0 +1,12 @@
+192.168.0.0 255.255.255.0 192.168.0.2 100 0
+192.168.1.0 255.255.255.0 192.168.1.2 100 1
+192.168.2.0 255.255.255.0 192.168.2.2 100 2
+192.168.0.0 255.255.0.0 192.168.3.2 100 3
+192.168.0.2 255.255.255.255 192.168.3.2 200 3
+192.168.0.2 255.255.255.255 192.168.0.2 80 0
+fd00::0:0 ffff:ffff:ffff:ffff:ffff:ffff:ffff:: fe80::0:2 100 0
+fd00::1:0 ffff:ffff:ffff:ffff:ffff:ffff:ffff:: fe80::1:2 100 1
+fd00::2:0 ffff:ffff:ffff:ffff:ffff:ffff:ffff:: fe80::2:2 100 2
+fd00::0:0 ffff:ffff:ffff:ffff:ffff:ffff:fffc:: fe80::3:2 100 3
+fd00::0:2 ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff fe80::3:2 200 3
+fd00::0:2 ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff fe80::0:2 80 0
